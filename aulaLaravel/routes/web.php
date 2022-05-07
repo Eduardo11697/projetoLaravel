@@ -28,3 +28,6 @@ Route::get('/sobre',function() {
 Route::get('/contato', function() {
     return view('contato');
 });
+Route::get('produtos',[ProdutoController::class, 'index']);
+
+Route::get('produto/{id}',[ProdutoController::class, 'show']);
